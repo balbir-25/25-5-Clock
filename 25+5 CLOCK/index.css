@@ -1,0 +1,103 @@
+
+body {
+    background-color: gray;
+    font-size: 44px;
+    text-align: center;
+  }
+  
+  .wrapper {
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .wrapper h2 {
+    margin: 0;
+  }
+  
+  .break-session-length {
+      display: flex;
+      width: 700px;
+      justify-content: space-between;
+  }
+  
+  button {
+    border: none;
+    padding: 8px;
+    font-size: 28px;
+    border-radius: 4px;
+  }
+  
+  div > button {
+    color: white;
+    background-color: green;
+  }
+  
+  div button:nth-child(2) {
+    color: #000;
+    background-color: yellow;
+  }
+  
+  strong {
+    margin: 0 8px;
+  }
+  
+  .timer {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 10px;
+  }
+  
+  .timer-wrapper > button {
+    margin-left: 10px
+  }
+
+  @media screen  and (max-width: 900px) {
+    .wrapper{
+      display: block; 
+        
+    }
+
+    .break-session-length{
+        width: 400px;
+    }
+
+    button {
+      width: 80%;
+      margin-left: 5px;
+      padding: 10px;
+    }
+
+    .timer{
+      margin: 0;
+      border: none;
+      width: 400px;
+    }
+  } 
+  
+  @media screen  and (max-width: 450px) {
+    .wrapper{
+      display: block; 
+        
+    }
+
+    .break-session-length{
+        width: 300px;
+    }
+
+    button {
+      width: 80%;
+      margin-left: 5px;
+      padding: 10px;
+    }
+
+    .timer{
+      margin: 0;
+      border: none;
+      width: 300px;
+    }
+  }
